@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Makeup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Beauty Quiz: Makeup Knowledge</h1>
+        <form id="quizForm">
+            <div class="card">
+                <p class="question">1. Produk apa yang digunakan untuk menyamarkan noda hitam atau jerawat?</p>
+                <label><input type="radio" name="q1" value="wrong"> Foundation</label>
+                <label><input type="radio" name="q1" value="correct"> Concealer</label>
+                <label><input type="radio" name="q1" value="wrong"> Highlighter</label>
+                <label><input type="radio" name="q1" value="wrong"> Bronzer</label>
+            </div>
+
+            <div class="card">
+                <p class="question">2. Alat yang digunakan untuk melentikkan bulu mata adalah...</p>
+                <label><input type="radio" name="q2" value="wrong"> Spoolie</label>
+                <label><input type="radio" name="q2" value="wrong"> Tweezers</label>
+                <label><input type="radio" name="q2" value="correct"> Eyelash Curler</label>
+                <label><input type="radio" name="q2" value="wrong"> Mascara Wand</label>
+            </div>
+
+            <div class="card">
+                <p class="question">3. Produk mana yang diaplikasikan sebelum foundation agar makeup tahan lama?</p>
+                <label><input type="radio" name="q3" value="correct"> Primer</label>
+                <label><input type="radio" name="q3" value="wrong"> Setting Spray</label>
+                <label><input type="radio" name="q3" value="wrong"> Loose Powder</label>
+                <label><input type="radio" name="q3" value="wrong"> Moisturizer</label>
+            </div>
+
+            <div class="card">
+                <p class="question">4. Bagian wajah mana yang biasanya diaplikasikan 'Highlighter'?</p>
+                <label><input type="radio" name="q4" value="wrong"> Seluruh wajah</label>
+                <label><input type="radio" name="q4" value="wrong"> Kelopak mata</label>
+                <label><input type="radio" name="q4" value="correct"> Tulang pipi & hidung</label>
+                <label><input type="radio" name="q4" value="wrong"> Bawah dagu</label>
+            </div>
+
+            <div class="card">
+                <p class="question">5. Teknik 'Contouring' bertujuan untuk...</p>
+                <label><input type="radio" name="q5" value="wrong"> Membuat wajah berkilau</label>
+                <label><input type="radio" name="q5" value="correct"> Memberi dimensi/bayangan pada wajah</label>
+                <label><input type="radio" name="q5" value="wrong"> Menyamarkan pori-pori</label>
+                <label><input type="radio" name="q5" value="wrong"> Mewarnai bibir</label>
+            </div>
+
+            <button type="button" id="submitBtn">Kirim</button>
+        </form>
+
+        <div id="resultArea" class="result-container" style="display: none;">
+            <hr>
+            <h2 id="finalScore"></h2>
+            <p id="status"></p>
+            <button type="button" id="resetBtn" class="reset-btn">Ulangi</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
